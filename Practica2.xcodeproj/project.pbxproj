@@ -13,6 +13,11 @@
 		A73568402929D8C800069D52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A735683E2929D8C800069D52 /* Main.storyboard */; };
 		A73568422929D8C900069D52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A73568412929D8C900069D52 /* Assets.xcassets */; };
 		A73568452929D8C900069D52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73568432929D8C900069D52 /* LaunchScreen.storyboard */; };
+		A735684E2929D9F800069D52 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A735684D2929D9F800069D52 /* Lottie */; };
+		A73568502929DBAA00069D52 /* playing.json in Resources */ = {isa = PBXBuildFile; fileRef = A735684F2929DBAA00069D52 /* playing.json */; };
+		A7B7E594292A3D200033041F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B7E593292A3D200033041F /* AVFoundation.framework */; };
+		A7B7E596292A3D270033041F /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B7E595292A3D270033041F /* AVKit.framework */; };
+		A7B7E598292A3EB40033041F /* loud_bang.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A7B7E597292A3EB40033041F /* loud_bang.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,10 @@
 		A73568412929D8C900069D52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A73568442929D8C900069D52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A73568462929D8C900069D52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A735684F2929DBAA00069D52 /* playing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = playing.json; sourceTree = "<group>"; };
+		A7B7E593292A3D200033041F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A7B7E595292A3D270033041F /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		A7B7E597292A3EB40033041F /* loud_bang.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loud_bang.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7B7E594292A3D200033041F /* AVFoundation.framework in Frameworks */,
+				A735684E2929D9F800069D52 /* Lottie in Frameworks */,
+				A7B7E596292A3D270033041F /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +54,7 @@
 			children = (
 				A73568372929D8C800069D52 /* Practica2 */,
 				A73568362929D8C800069D52 /* Products */,
+				A7B7E592292A3D200033041F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +69,8 @@
 		A73568372929D8C800069D52 /* Practica2 */ = {
 			isa = PBXGroup;
 			children = (
+				A7B7E597292A3EB40033041F /* loud_bang.mp3 */,
+				A735684F2929DBAA00069D52 /* playing.json */,
 				A73568382929D8C800069D52 /* AppDelegate.swift */,
 				A735683A2929D8C800069D52 /* SceneDelegate.swift */,
 				A735683C2929D8C800069D52 /* ViewController.swift */,
@@ -65,6 +80,15 @@
 				A73568462929D8C900069D52 /* Info.plist */,
 			);
 			path = Practica2;
+			sourceTree = "<group>";
+		};
+		A7B7E592292A3D200033041F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7B7E595292A3D270033041F /* AVKit.framework */,
+				A7B7E593292A3D200033041F /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +107,9 @@
 			dependencies = (
 			);
 			name = Practica2;
+			packageProductDependencies = (
+				A735684D2929D9F800069D52 /* Lottie */,
+			);
 			productName = Practica2;
 			productReference = A73568352929D8C800069D52 /* Practica2.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +138,9 @@
 				Base,
 			);
 			mainGroup = A735682C2929D8C800069D52;
+			packageReferences = (
+				A735684C2929D9F800069D52 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = A73568362929D8C800069D52 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +155,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73568502929DBAA00069D52 /* playing.json in Resources */,
 				A73568452929D8C900069D52 /* LaunchScreen.storyboard in Resources */,
 				A73568422929D8C900069D52 /* Assets.xcassets in Resources */,
 				A73568402929D8C800069D52 /* Main.storyboard in Resources */,
+				A7B7E598292A3EB40033041F /* loud_bang.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,9 +333,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = minero.erick.Practica2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -328,9 +363,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = minero.erick.Practica2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -356,6 +394,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A735684C2929D9F800069D52 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A735684D2929D9F800069D52 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A735684C2929D9F800069D52 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A735682D2929D8C800069D52 /* Project object */;
 }
